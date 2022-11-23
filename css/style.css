@@ -1,0 +1,229 @@
+@import './reset.css';
+@import './media.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1140px;
+    padding: 0 30px ;
+    margin: 0  auto;
+}
+
+/*header*/
+
+.btn-mob{
+    display: none;
+}
+
+.header{
+    background-color: #f1f1f1;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.logo{
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    padding-left: 75px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: black;
+}
+
+.logo::after{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #FDA300;
+    border-radius: 50%;
+}
+
+/* bu nav */
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.nav-link{
+    color:black;
+}
+
+.nav-link.active{
+    color: rgb(43, 43, 136);
+}
+
+@media (max-width:1140px){
+    .nav-list{
+        display: none;
+    }
+
+    .btn-mob{
+        display: block;
+        padding-right: 15px;
+    }
+
+}
+
+/* Hero rasm qismi */
+
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.main_header_text{
+    padding-left: 75px;
+    padding-top: 200px;
+    max-width: 750px;
+}
+
+.main_header_text h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.main_header_text p{
+    font-size: 14px;
+    font-size: 300;
+}
+
+.main_header_img{
+    padding-right: 15px;
+}
+
+/* survey qismi */
+.surveys-card{
+    padding: 90px 0;
+}
+
+.surveys_img{
+    margin-bottom: 20px;
+    
+}
+
+.surveys-card h3{
+    font-size: 26px;
+    font-weight: 400;
+
+}
+
+.surveys-card p{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.surveys-row{
+    display: flex;
+    column-gap: 40px;
+    padding-left: 75px;
+}
+
+.main-portfolio{
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+.portfolio-text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.portfolio-text h3{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.main-portfolio_card:first{
+    padding-top: 0px;
+}
+
+.main-portfolio_card{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+.main-portfolio_card h4{
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+.main-portfolio_card img{
+    padding-bottom: 8px;
+}
+
+.main_footer{
+    text-align: center;
+}
+
+.footer_asos{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.footer_gap{
+    font-size: 28px;
+    font-weight: 550;
+    padding: 10px 0;   
+}
+
+
+.footer_buton{
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: black;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in,top 0.2s ease-in ;
+    
+}
+
+
+.footer_buton:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+.footer_social{
+    padding-top: 25px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+
+.bezak{
+    padding-top: 50px;
+    height: 150px;
+    background-color: #f1f1f1;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.bezak a{
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
